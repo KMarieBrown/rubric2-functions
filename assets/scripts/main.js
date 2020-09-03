@@ -2,7 +2,13 @@
 // Test my JS file.
 console.log('My JavaScript is working!');
 
-// Creates and calls a function by name.
+// Creates a basic function and invokes it by name.
+function sunshine() {
+	document.getElementById('sun').innerHTML = 'Sunny days are the best days!';
+}
+sunshine();
+
+// Passes info into a function.
 function seasonWish(a, b) {
 	var subtractSeasons = 'I wish I lived in a climate with only ' + (a - b) + ' season.';
 	alert(subtractSeasons);
@@ -34,10 +40,10 @@ switch (favoriteSeason) {
 		break;
 }
 
-// Returns data from a function.
+// Passes info into the function and returns data from the function.
 function myOpinion(season) {
-	var beauty = 'I love the beauty of leaves changing colors in ' + season + '.';
+	var beauty = "I think it's beautiful to see leaves change colors in the " + season + '.';
 	return beauty;
 }
-var seasons2 = myOpinion('Fall');
-alert(seasons2);
+var bestSeason = myOpinion('Fall');
+alert(bestSeason);
